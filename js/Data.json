@@ -1,0 +1,15 @@
+{
+  "Workshops": 
+  [{"titre":"injection de dépendance ","coach":"sarah Khalil","duree":"4h"},
+  {"titre":"Quoi de neuf dans Symfony 3","coach":"Hugo Hamon","duree":"6h"},
+  {"titre":"Guide de migration vers symfony 3.0","coach":"Nicolas Grekas ","duree":"4h"},
+  {"titre":"Symfony Forms Master Class ","coach":"Bernhard Schussek","durée":"6h"}
+  ],
+  "conf": 
+  [{"Theme":"Lorsque E-commerce se réunit Symfony ","speaker":"Marc Morera","duree":"40min "},
+  {"Theme":"La sécurité en Symfony","speaker":"Ryan Weaver","duree":"45min "},
+  {"Theme":"Cloud est l'avenir, et votre architecture n'est pas prête","speaker":"Benjamin Talmard","duree":"40min "},
+  {"Theme":"Doctrine 2: à utiliser ou ne pas utiliser ","speaker":"Benjamin Eberlei","duree":"30min "},
+  {"Theme":"Symfony2 la migration vers PHP7","speaker":"julien pauli","duree":"50min "}
+  ]
+ }

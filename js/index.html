@@ -1,0 +1,90 @@
+<html ng-app="myapp">
+<head>
+    
+<script src="angular.min.js"></script>   
+<script src="angular-route.min.js"></script>   
+  
+    <script>
+        
+    var app=angular.module("myapp",["ngRoute"]);
+    app.config(function($routeProvider)
+              
+               {
+    $routeProvider
+        
+  
+    
+    .when("/Accueil",{templateUrl:"Home.html"})
+    .when("/Contact",{templateUrl:"contact.html"})
+    .when("/Workshops",{templateUrl:"Workshops.html"})
+     .when("/Conferences",{templateUrl:"Conferences.html"})
+    
+    }
+              );
+    app.controller('myconroller',function($scope,$http)
+                       {
+        $http.get('Data.json').success(
+        function(data)
+            {
+            $scope.models=data.Workshops;
+            }
+        
+        );
+        }
+                      );
+          app.controller('mycon',function($scope,$http)
+                       {
+        $http.get('Data.json').success(
+        function(data)
+            {
+            $scope.models=data.conf;
+			
+            }
+        
+        );
+        }
+                      );
+        
+    
+    </script>
+   
+    
+</head>
+
+    
+    
+    
+    
+    
+    
+<body>
+    
+ 
+  <div id="1">
+    <ul>
+   
+     <a href="#/Accueil">Accueil</a>
+        <a href="#/Contact">Contact</a>
+        <a href="#/Workshops">Workshops</a>
+        <a href="#/Conferences">Conferences</a>
+     
+    </ul>
+     
+    </div>  
+    
+
+    
+   
+    
+    <div ng-view="">
+    
+    </div>
+    
+    
+    
+    
+    
+    </body>
+
+
+</html>
